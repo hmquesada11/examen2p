@@ -1,0 +1,162 @@
+:root {
+  --fondoAzul: rgb(5, 210, 247);
+  --colorLetras: #F8F8F8;
+  --oscuro: #4a4e69;
+  --fondoBarra: #ced3f3;
+  --seleccionBarra: #63646d;
+  --seleccionLetra: #caa308;
+}
+
+html {
+  font-family: 'Robotos', Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+header {
+  background-color: var(--fondoAzul);
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--fondoAzul);
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: var(--colorLetras);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--colorLetras);
+}
+
+.nav-bg {
+  background-color: var(--fondoBarra);
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navContenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.navegacion-principal a {
+  color: var(--oscuro);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--seleccionBarra);
+  color: var(--seleccionLetra);
+
+}
+
+.noticias-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.noticia {
+  flex: 0 0 auto;
+  width: 410px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.noticia img {
+  width: 410px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.slider {
+  width: 80%;
+  margin: 100px 150px 100px 150px;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite;
+  animation-timing-function: ease;
+}
+
+.slider li {
+  width: 25%;
+  list-style: none;
+}
+
+.slider img {
+  width: 85%;
+  height: auto;
+  max-height: 540px;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+
+  16.66% {
+    margin-left: 0;
+  }
+
+  16.66% {
+    margin-left: -100%;
+  }
+
+  33.33% {
+    margin-left: -100%;
+  }
+
+  33.33% {
+    margin-left: -200%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  50% {
+    margin-left: -300%;
+  }
+
+  66.66% {
+    margin-left: -300%;
+  }
+
+  66.66% {
+    margin-left: -400%;
+  }
+
+  83.33% {
+    margin-left: -400%;
+  }
+
+  83.33% {
+    margin-left: -500%;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
