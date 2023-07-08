@@ -20,23 +20,37 @@
         </nav>
     </div>
     <main>
-        <section>
-            <div class="slider">
-                <ul>
-                    <li>
-                        <img src="imagen1.jpg" alt="imagen 1">
-                    </li>
-                    <li>
-                        <img src="imagen2.jpg" alt="imagen 2">
-                    </li>
-                    <li>
-                        <img src="imagen3.jpg" alt="imagen 3">
-                    </li>
-                    <li>
-                        <img src="imagen4.jpg" alt="imagen 4">
-                    </li>
-                </ul>
-            </div>
+        <section class="inscribete-section">
+            <h2>Seleccion de Futbol Sub-17 de Honduras</h2>
+            <img src="sub-17-de-honduras-en-macedonia.jpg" alt="seleccionmenor">
+            <h3>Forma parte de las inferiores de la seleccion de futbol de Honduras</h3>
+            <form action="#" method="get">
+                <fieldset class="form-inscripcion">
+                    <legend>Informacion personal</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
+                    <label for="fechanac">Fecha de nacimiento:</label>
+                    <input type="date" name="fechanac" id="fechanac"><br>
+                    <label for="correo_electronico">Correo electronico:</label>
+                    <input type="email" name="correo" id="correo_electronico" placeholder="jim_gordon@example.com"><br>
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Barrio/colonia, municipio, departamento"><br>
+                    <label for="telefono">Telefono:</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="504xxxx-xxxx"></input><br>
+                    <label for="foto">Fotografia:</label>
+                    <input type="file" name="foto" id="foto"><br>
+                    <label for="posicion">Posicion de juego:</label>
+                    <select name="posiciondejuego" id="posiciondejuego">
+                        <option value="opcion1" selected>Portero</option>
+                        <option value="opcion2">Defensa</option>
+                        <option value="opcion3">Mediocampo</option>
+                        <option value="opcion4">Delantero</option>
+                    </select><br>
+                    <label for="comentario">Comentario:</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Breve descripcion personal"></textarea>
+                </fieldset>
+                <input type="submit" value="Enviar" id="boton">
+            </form>
         </section>
     </main>
     <footer>

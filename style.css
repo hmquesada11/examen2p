@@ -5,6 +5,8 @@
   --fondoBarra: #ced3f3;
   --seleccionBarra: #63646d;
   --seleccionLetra: #caa308;
+  --colorBoton: #4CAF50;
+  --colorBotonHover: #1f6222;
 }
 
 html {
@@ -103,6 +105,57 @@ h1 {
 .leyendas-section text {
   float: left;
   width: 50%;
+}
+
+.inscribete-section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.inscribete-section img {
+  margin-top: 20px;
+}
+
+form {
+  margin-top: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2efef;
+}
+
+.form-inscripcion {
+  margin-bottom: 15px;
+}
+
+.form-inscripcion label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-inscripcion input[type="text"],
+.form-inscripcion input[type="email"],
+.form-inscripcion input[type="date"],
+.form-inscripcion select,
+.form-inscripcion textarea {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#boton {
+  background-color: var(--colorBoton);
+  color: #FFFFFF;
+}
+
+#boton:hover {
+  background-color: var(--colorBotonHover);
 }
 
 .slider {
